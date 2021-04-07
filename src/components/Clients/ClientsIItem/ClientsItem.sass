@@ -1,0 +1,26 @@
+.clients
+  &-block
+    display: flex
+    margin-bottom: 32px
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    text-align: center
+    height: 130px
+    filter: grayscale(100%)
+    &:hover
+      filter: grayscale(0%)
+
+@media (max-width: 768px)
+  .clients
+    &-block
+      img
+        max-width: 90%
+        max-height: 90%
+
+@media (max-width: 576px)
+  .clients
+    &-block
+      height: 87px
