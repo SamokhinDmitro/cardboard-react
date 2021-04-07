@@ -1,0 +1,49 @@
+@import '../../../shared/sass/variable'
+.features
+  &-block
+    display: flex
+    min-height: 165px
+    align-items: center
+    padding-top: 28px
+    padding-bottom: 32px
+    padding-left: 12px
+    padding-right: 19px
+    background: $text-color-light
+    margin-bottom: 30px
+    &__img
+      margin-right: 11px
+      flex-shrink: 0
+      min-width: 52px
+    &__text
+      color: $text-color-dark
+    &__title
+      font-size: 15px
+      font-weight: 700
+      margin-bottom: 11px
+    &__descr
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.35
+
+@media (max-width: 992px)
+  .features
+    &-block
+      flex-direction: column
+      text-align: center
+      min-height: 240px
+@media (max-width: 768px)
+  .features
+    &-block
+      flex-direction: row
+      text-align: inherit
+      min-height: auto
+
+@media (max-width: 576px)
+  .features
+    &-block
+      padding-top: 22px
+      padding-bottom: 24px
+      margin-bottom: 8px
+      &__img
+        min-width: auto
+
