@@ -1,0 +1,86 @@
+@import '../../shared/sass/variable'
+
+/*PRODUCTION*/
+.production
+  padding-top: 87px
+  padding-bottom: 48px
+  color: $section-color
+  background: $text-color-light
+  &-text
+    max-width: 380px
+    &__title
+      position: relative
+      z-index: 1
+      padding-top: 20px
+      padding-bottom: 16px
+      width: 110%
+      margin-left: -10%
+      margin-bottom: 28px
+      padding-left: 10%
+      font-size: 28px
+      font-weight: 400
+      line-height: 0.78
+      color: $text-color-light
+      background: $active-color
+    &__descr
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.5
+      text-align: justify
+      height: auto
+
+
+/*END PRODUCTION*/
+
+@media (max-width: 992px)
+  .production
+    padding: 40px 0
+
+    &-text
+      max-width: 100%
+      text-align: center
+      margin-bottom: 22px
+
+      &__title
+        width: 100%
+        padding-left: 0
+        margin-left: 0
+        text-transform: uppercase
+        margin-bottom: 17px
+        font-size: 24px
+        font-weight: 700
+        line-height: 0.9
+
+@media (max-width: 768px)
+  .production
+    padding: 28px 0
+    &-text
+      max-width: 100%
+      text-align: center
+      margin-bottom: 22px
+      &__title
+        width: 100%
+        padding-left: 0
+        margin-left: 0
+        text-transform: uppercase
+        margin-bottom: 17px
+        font-size: 24px
+        font-weight: 700
+        line-height: 0.9
+      &__descr
+        font-size: 14px
+        line-height: 1.25
+
+
+
+@media (max-width: 576px)
+  .production
+    padding: 28px 0
+    &-text
+      max-width: 100%
+      text-align: center
+      margin-bottom: 22px
+      &__title
+        font-size: 20px
+      &__descr
+        text-align: center
