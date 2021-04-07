@@ -1,0 +1,39 @@
+@import '../../../../shared/sass/variable'
+.slider
+  &-btn
+    position: absolute
+    width: 22px
+    height: 80px
+    border: 1px solid $active-color
+    color: $active-color
+    background: transparent
+    transition: all 0.5s ease
+    cursor: pointer
+    &:hover
+      border: 1px solid transparent
+      background: $active-color
+      color: $text-color-light
+    &__prev
+      top: 0
+      left: -5px
+    &__next
+      top: 0
+      right: -5px
+
+@media (max-width: 992px)
+  .slider
+    &-btn
+      &__prev
+        top: 10%
+
+      &__next
+        top: 10%
+
+@media (max-width: 576px)
+  .slider
+    &-btn
+      &__prev
+        top: 30%
+      &__next
+        top: 30%
+
