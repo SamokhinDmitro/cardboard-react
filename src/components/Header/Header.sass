@@ -1,0 +1,106 @@
+@import '../../shared/sass/variable'
+
+/*HEADER*/
+.header
+  background: #fff
+  padding-top: 40px
+  &-logo
+    width: 191px
+    height: 61px
+    background: url("../../shared/img/header/header-logo.png") center 0 no-repeat
+    background-size: cover
+  &-contacts
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    &__phones
+      display: flex
+    &__phone
+      display: block
+      margin-right: 15px
+      font-size: 22px
+      font-weight: 500
+      line-height: 1
+      text-decoration: none
+      text-transform: uppercase
+      color: $text-color-dark
+      cursor: pointer
+      &:first-child
+        padding-right: 15px
+        border-right: 1px solid #cfcfd0
+      &:hover
+        text-decoration: none
+        color: lighten($text-color-dark, 25)
+    &__button
+      vertical-align: center
+/*END HEADER*/
+
+@media (max-width: 992px)
+  .header
+    &-contacts
+      justify-content: space-around
+
+      &__phones
+        flex-direction: column
+
+      &__phone
+        margin-right: 0
+
+        &:first-child
+          padding-right: 0
+          border-right: 0
+
+      &__button
+        display: flex
+        justify-content: center
+        align-items: center
+
+@media (max-width: 768px)
+  .header
+    padding: 11px 0
+    background: #f4f4f4
+
+    &-logo
+      padding: 8px
+      border-radius: 4px
+      width: 40px
+      height: 40px
+      background: $active-color url("../../shared/img/header/header-logo-mobile.png") center no-repeat
+    &-contacts
+      justify-content: flex-end
+      &__phones
+        flex-direction: row
+      &__phone
+        margin-right: 15px
+        font-size: 16px
+        line-height: 1.2
+        &:first-child
+          padding-right: 15px
+          border-right: 1px solid #cfcfd0
+
+      &__button
+        width: 40px
+        height: 40px
+        padding: 10px
+        text-align: center
+
+@media (max-width: 576px)
+  .header
+    &-logo
+      width: 35px
+      height: 35px
+    &-contacts
+      &__phones
+        flex-direction: column
+      &__phone
+        font-size: 16px
+        line-height: 1.2
+        &:first-child
+          border-right: none
+          padding-right: 0
+      &__button
+        display: flex
+        width: 27px
+        height: 27px
+        padding: 5px
